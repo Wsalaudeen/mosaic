@@ -50,7 +50,7 @@ function Footer() {
               Address: N0. 6, Travel Made Easy, Toronto, Canada
             </li>
             <li className="flex gap-2 items-center mb-3 text-sm">
-              <img src={Phone} alt="phone call icon" /> Phone: +1234567890
+              <img src={Phone} alt="phone call icon" /> Phone: +12345678908
             </li>
             <li className="flex gap-2 items-center mb-3 text-sm">
               <img src={Mail} alt="mail icon" />
