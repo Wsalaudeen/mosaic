@@ -38,7 +38,7 @@ const Places = [
 
 function Explore() {
   return (
-    <section className="my-40 font-montserrat">
+    <section className="my-40 font-family">
       <div className="flex bg-[#34495B] rounded-t-2xl  px-20 py-10 mb-40">
         <div className="relative w-[100%] ml-20">
           <div className="relative bottom-[80px] ml-8 w-[100%]">

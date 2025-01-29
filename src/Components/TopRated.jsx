@@ -43,7 +43,7 @@ const Places = [
 
 function TopRated() {
   return (
-    <div className="flex justify-center flex-col items-center lg:px-20 px-10 my-40">
+    <div className="flex justify-center flex-col items-center lg:px-20 px-10 my-40 font-family">
       <p className="font-bold text-2xl">Get Inspired</p>
       <p className="text-[#777777] font-[500] mb-6">
         Pick From Top-rated Tourist Attractions Based On User’s Experiences
@@ -57,7 +57,7 @@ function TopRated() {
             <img
               src={place.image}
               alt={place.city}
-              className="h-[180px] rounded-[10%]"
+              className="lg:h-[180px] rounded-[10%]"
             />
             <div className="flex justify-between mt-4">
               <p className="text-[#1B1B1E] font-bold">{place.city}</p>

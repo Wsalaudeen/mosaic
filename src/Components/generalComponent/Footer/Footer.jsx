@@ -6,7 +6,7 @@ import Mail from "../../../assets/Images/Mail.png";
 function Footer() {
   return (
     <footer className="bg-[#34495B] lg:p-20 p-10">
-      <div className="flex lg:flex-row flex-col justify-between text-[#FFF] font-montserrat gap-6">
+      <div className="flex lg:flex-row flex-col justify-between text-[#FFF] font-family gap-6">
         <div className="">
           <h1 className="font-bold text-2xl mb-5">Logo</h1>
           <p className="text-sm mb-10">
