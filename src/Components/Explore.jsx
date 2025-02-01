@@ -1,5 +1,9 @@
 import { IoMdArrowForward } from "react-icons/io";
 import Macbook from "../assets/Images/Macbook-Pro.png";
+import Pen from "../assets/Images/pen.png";
+import Outline from "../assets/Images/outline.png";
+import Robot from "../assets/Images/robot.png";
+import Brain from "../assets/Images/brain.png";
 
 const Places = [
   {
@@ -9,7 +13,7 @@ const Places = [
     rating: "1,234",
     flagIcon: "./Flag.png",
     loveIcon: "./Love.png",
-    review: "Lorem ipsum dolor sit amet consectetur.",
+    review: "A major tourist destination, entertainment hub in New York City.",
   },
   {
     id: 2,
@@ -18,7 +22,8 @@ const Places = [
     rating: "1,234",
     flagIcon: "./Flag.png",
     loveIcon: "./Love.png",
-    review: "Lorem ipsum dolor sit amet consectetur.",
+    review:
+      "The symbol of Paris and all of France is the elegant and unique Eiffel tower.",
   },
   {
     id: 3,
@@ -27,29 +32,51 @@ const Places = [
     rating: "1,234",
     flagIcon: "./Flag.png",
     loveIcon: "./Love.png",
-    review: "Lorem ipsum dolor sit amet consectetur.",
+    review: "Rooms decorated with stunning stucco, paintings and mosaics.",
   },
 ];
 
 function Explore() {
   return (
-    <section className="my-40 font-montserrat">
-      <div className="flex bg-[#34495B] rounded-t-2xl py-10 px-20">
-        <div className="relative bottom-[100px]">
-          <img src={Macbook} alt="Macbook-pro" />
+    <section className="my-40 font-family">
+      <div className="flex bg-[#34495B] rounded-t-2xl  px-20 py-10 mb-40">
+        <div className="relative w-[100%] ml-20">
+          <div className="relative bottom-[80px] ml-8 w-[100%]">
+            <img src={Macbook} alt="Macbook-pro" />
+          </div>
+          <img src={Robot} alt="robot" className="absolute -top-8" />
+          <img
+            src={Pen}
+            alt="broken pen"
+            className="absolute -top-[70%] left-[20%]"
+          />
+          <img
+            src={Outline}
+            alt="outine"
+            className="absolute -top-[60%] right-[30%]"
+          />
+          <img
+            src={Brain}
+            alt="thinking-brain"
+            className="absolute left-[83%] top-[10%]"
+          />
         </div>
         <div>
-          <p className="text-[#DCE4EC] font-bold ">
+          <p className="text-[#DCE4EC] font-bold text-4xl leading-10 mb-5">
             Ask Away, AI’s Got You Covered
           </p>
-          <p className="text-[#C6C6C6] font-[500]">
-            Lorem ipsum dolor sit amet consectetur. Nunc duis vulputate sit. Dui
-            gravida sed tempor pulvinar.{" "}
+          <p className="text-[#C6C6C6] font-[500] pr-20">
+            Let AI plan your perfect trip! Enter your destination and interests,
+            and get a personalized itinerary in seconds—stress-free travel
+            starts here!{" "}
           </p>
+          <button className="mt-10 py-4 px-8  bg-custom-gradient rounded-full text-white font-[500]">
+            Get Started
+          </button>
         </div>
       </div>
       <div className="flex justify-center flex-col items-center lg:px-20 px-10">
-        <p className="font-bold text-xl mb-6">More To Explore</p>
+        <p className="font-bold text-xl my-10">More To Explore</p>
         <div className="grid lg:grid-cols-3 grid-cols-1 gap-8 mb-6 w-[100%]">
           {Places.map((place) => (
             <div key={place.id} className="relative">
@@ -68,7 +95,9 @@ function Explore() {
                   <p className="text-[#777777] font-[400]">{place.rating}</p>
                 </div>
               </div>
-              <p className="text-[#777777] font-[400]">{place.review}</p>
+              <p className="text-[#777777] font-[400] lg:pr-20">
+                {place.review}
+              </p>
             </div>
           ))}
         </div>
