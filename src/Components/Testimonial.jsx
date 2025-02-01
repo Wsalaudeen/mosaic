@@ -65,7 +65,7 @@ function Testimonial() {
       </div>
 
       <div className="">
-        <img src={Wave} alt="" />
+        <img src={Wave} alt="wave" className="w-full" />
         <div className=" bg-blue-200">
           <div className="flex flex-col items-center justify-center text-center">
             <p className="lg:text-3xl text-xl font-bold text-text-black mb-5 mt-10">
