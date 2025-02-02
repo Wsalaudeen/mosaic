@@ -15,18 +15,18 @@ export default function HeroSection() {
             Lorem ipsum dolor sit amet consectetur. Nunc duis <br /> vulputate
             sit. Dui gravida sed tempor pulvinar.
           </p>
-          <div class="mt-6">
-            <button class="bg-custom-gradient text-[#ffff] text-xs tracking-[0.5px] font-medium font-family w-[150px] h-[48px] px-4 rounded-[400px] text-center">
+          <div className="mt-6">
+            <button className="bg-custom-gradient text-[#ffff] text-xs tracking-[0.5px] font-medium font-family w-[150px] h-[48px] px-4 rounded-[400px] text-center">
               Get Started
             </button>
           </div>
         </div>
         {/* image section */}
-        <div class="flex justify-center flex-1">
+        <div className="flex justify-center flex-1">
           <img
             src={Top}
             alt="travel mosaic mockup"
-            class="w-3/4 md:w-full object-cover"
+            className="w-3/4 md:w-full object-cover"
           />
         </div>
       </div>
