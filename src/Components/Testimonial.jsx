@@ -57,7 +57,7 @@ function Testimonial() {
                   alt={review.name}
                   className="w-12 h-12 rounded-full"
                 />
-                <p className="text-[#0C1E23] font-bold">{review.name}</p>
+                <p className="text-[#0C1E23] font-bold">{review.name}</p>dir
               </div>
             </div>
           ))}

@@ -1,5 +1,6 @@
 import heroImage from "./hero.png";
 import Line from "../../assets/Images/Line.png";
+import { Link } from "react-router-dom";
 export default function Hero() {
   return (
     <section className="text-[#f9f9fe]">
@@ -23,9 +24,11 @@ export default function Hero() {
           <button className="hidden md:inline-block bg-custom-gradient text-[#ffff] text-xs tracking-[0.5px] font-medium font-family w-[150px] h-[48px] px-4 rounded-[400px] text-center">
             Start Planning
           </button>
-          <button className="hidden md:inline-block bg-[#e2e2e2] text-[#1b1b1e] text-xs tracking-[0.5px] font-medium font-family w-[150px] h-[48px] px-4 rounded-[400px] text-center">
-            Log In
-          </button>
+          <Link to="/login">
+            <button className="hidden md:inline-block bg-[#e2e2e2] text-[#1b1b1e] text-xs tracking-[0.5px] font-medium font-family w-[150px] h-[48px] px-4 rounded-[400px] text-center">
+              Log In
+            </button>
+          </Link>
         </div>
         <img
           src={Line}
